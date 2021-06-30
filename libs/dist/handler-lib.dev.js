@@ -33,8 +33,11 @@ function handler(lambda) {
           case 11:
             return _context.abrupt("return", {
               statusCode: statusCode,
-              body: JSON.stringify(body) //body:body  we can also write like this
-
+              body: JSON.stringify(body),
+              headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": true
+              }
             });
 
           case 12:

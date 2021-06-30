@@ -30,7 +30,17 @@ var main = (0, _handlerLib["default"])(function _callee(event, context) {
             source: source,
             amount: amount,
             description: description,
-            currency: "usd"
+            currency: "usd",
+            shipping: {
+              name: "Jenny Rosen",
+              address: {
+                line1: "510 Townsend St",
+                postal_code: "98140",
+                city: "San Francisco",
+                state: "CA",
+                country: "US"
+              }
+            }
           }));
 
         case 6:
